@@ -2,7 +2,7 @@
 
 En desarrollo
 
-# Cómo usarlo
+# Cómo hacer deploy
 ```
 yarn install # Setup (primera vez)
 npm run watch # Builds

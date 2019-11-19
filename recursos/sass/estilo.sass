@@ -8,32 +8,30 @@ body
 	margin-right: auto
 	width: 90%
 
+input[type='radio'] 
+	display: none
+
 .mensaje
 	display: none
 	width: 100%
 	height: 100vh
 	font-size: 25px
 
+	.resolucion 
+		/*margin: 0*/
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
 
-.mensaje .resolucion 
-	/*margin: 0*/
-	position: absolute
-	top: 50%
-	-ms-transform: translateY(-50%)
-	transform: translateY(-50%)
+		.actual 
+			display: none
 
+		div 
+			padding: 20px
 
-.mensaje .resolucion .actual 
-	display: none
-
-
-.mensaje .resolucion div 
-	padding: 20px
-
-
-.mensaje .resolucion .tip 
-	font-weight: 700
-	color: rgba(0,0,0, .7)
+		.tip
+			font-weight: 700
+			color: rgba(0,0,0, .7)
 
 
 .teclado 
@@ -44,31 +42,22 @@ body
 	font-size: 90px
 	text-align: center
 
+	.grupo
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		padding: 20px
+		margin: 10px
+		border: 2px #707070 solid
 
-.grupo 
-	display: grid
-	grid-template-columns: 1fr 1fr 1fr
-	padding: 20px
-	margin: 10px
-	border: 2px #707070 solid
+		&:focus 
+			background: #606060
+			color: #FFF
 
-
-input[type='radio'] 
-	display: none
-
-
-.grupo:focus 
-	background: #606060
-	color: #FFF
-
-
-.grupo.elegido 
-	background: #606060
-	color: #FFF
-	border: 2px #606060 solid
-	outline: #606060
-
+		&.elegido
+			background: #606060
+			color: #FFF
+			border: 2px #606060 solid
+			outline: #606060
 
 .texto 
 	margin: 10px
-
