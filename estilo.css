@@ -35,9 +35,10 @@ input[type='radio'] {
 }
 
 .grupo.elegido {
-	background: red;
+	background: #606060;
 	color: #FFF;
-	border: 2px red solid;
+	border: 2px #606060 solid;
+	outline: #606060;
 }
 
 .texto {

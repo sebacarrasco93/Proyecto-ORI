@@ -19,7 +19,6 @@ function seleccionarGrupo() {
 
     grupoElegido = $('.grupo:focus')
     grupoElegido.addClass('elegido')
-    grupoElegido.css('outline', 'red')
 }
 
 // $(document).keydown(function(e) {

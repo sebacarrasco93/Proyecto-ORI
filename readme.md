@@ -4,10 +4,14 @@ En desarrollo
 
 # Idea original
 
-En un principio, el proyecto fue diseñado para Oriana, con quien probamos el sistema de Enclaustramiento, sin resultados favorables en primera instancia. Oriana tiene movilidad completa en su pie. Una vez terminado, quedará público para que cualquier persona pueda descargarlo y modificarlo a gusto.
+En un principio, el proyecto fue diseñado para Oriana, con quien probamos el sistema de Enclaustramiento, sin resultados favorables en primera instancia. Oriana tiene movilidad completa en su pie. Así que decidimos crear una alternativa en la que pudiera utilizar su pie para comunicarse. Una vez terminado, quedará público, con todos los pasos necesarios explicados, para que cualquier persona pueda descargar y modificar el proyecto a gusto.
 
 ## A quién va dirigido
 
-Personas que hayan tenido un Accidente Cerebrovascular (ACV) u otro que le impida usar el teclado convencional, que puedan mover al menos un pie en los 4 ejes (izquierda, derecha, arriba, abajo), y presionar un botón, como si fuese un pedal de vehículo. La persona no debe tener afasia, debe poder leer y escribir. Y sobretodo, ganas de probar un sistema completamente nuevo en esta materia.
+Principalmente a personas que hayan tenido un Accidente Cerebrovascular (ACV) u otra condición que le impida usar el teclado convencional con las manos, que puedan mover al menos un pie en los 4 ejes (izquierda, derecha, arriba, abajo), y presionar un botón, como si fuese un pedal de vehículo. La persona no debe tener afasia, y debe poder leer y escribir. Y por supuesto, sobretodo, ganas de probar un sistema completamente nuevo en esta materia.
 
 ## Pronto más información...
+
+## Herramientas utilizadas para el desarrollo
+> jQuery [by The jQuery Foundation](https://jquery.com)
+> Spatial Navigation [by Luke Chang](https://github.com/luke-chang/js-spatial-navigation)
