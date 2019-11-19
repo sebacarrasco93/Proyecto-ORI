@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
 
 body {
+	margin: 0;
 	font-family: 'Poppins', sans-serif;
 	user-select: none;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+}
+
+.mensaje {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	font-size: 25px;
+}
+
+.mensaje .resolucion {
+	/*margin: 0;*/
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.mensaje .resolucion .actual {
+	display: none;
+}
+
+.mensaje .resolucion div {
+	padding: 20px;
+}
+
+.mensaje .resolucion .tip {
+	font-weight: 700;
+	color: rgba(0,0,0, .7);
 }
 
 .teclado {
