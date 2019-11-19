@@ -5,13 +5,23 @@
 $.getScript('https://luke-chang.github.io/js-spatial-navigation/spatial_navigation.js', function() {
     $('.grupo')
     .SpatialNavigation()
+    .on('sn:enter-down', function(e) {
+        dibujarCaracter(e.target.innerText[0])
+    })
     .focus(function() {
         seleccionarGrupo(this)
     })
     .blur(function() { $(this).css('outline', ''); })
     .first()
-    .focus();
+    .focus()
 });
+
+function dibujarCaracter(caracter) {
+    if (true) { // No es el de borrar (o números)
+        $('.escrito span').html('') // Borra el span
+        $('.escrito').append(caracter)
+    }
+}
 
 function seleccionarGrupo() {
     grupos = $('.grupo')
