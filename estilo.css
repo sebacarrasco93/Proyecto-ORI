@@ -25,6 +25,10 @@ body {
 	border: 2px #707070 solid;
 }
 
+input[type='radio'] {
+	display: none;
+}
+
 .grupo:focus {
 	background: #606060;
 	color: #FFF;

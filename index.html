@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-	<title>Proyecto Ori v1.0</title>
-	<link rel="stylesheet" href="estilo.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<script src="interaccion.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Proyecto Ori v1.0</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="interaccion.js"></script>
 </head>
 <body>
-	<div class="teclado">
-		<div class="grupo" tabindex="1">
-			<div>a</div>
-			<div>b</div>
-			<div>c</div>
-		</div>
+    <div class="teclado">
+        <div class="grupo" tabindex="1">
+            <label for="a">a</label>
+            <input type="radio" name="seleccion" value="a" id="a"></input>
+            <label for="b">b</label>
+            <input type="radio" name="seleccion" value="b" id="b"></input>
+            <label for="c">c</label>
+            <input type="radio" name="seleccion" value="c" id="c"></input>
+        </div>
 
-		<div class="grupo" tabindex="2">
-			<div>d</div>
-			<div>e</div>
-			<div>f</div>
-		</div>
+        <div class="grupo" tabindex="2">
+            <label for="d">d</label>
+            <input type="radio" name="seleccion" value="d" id="d"></input>
+            <label for="e">e</label>
+            <input type="radio" name="seleccion" value="e" id="e"></input>
+            <label for="f">f</label>
+            <input type="radio" name="seleccion" value="f" id="f"></input>
+        </div>
 
-		<div class="grupo" tabindex="3">
-			<div>g</div>
-			<div>h</div>
-			<div>i</div>
-		</div>
+        <div class="grupo" tabindex="3">
+            <label for="g">g</label>
+            <input type="radio" name="seleccion" value="g" id="g"></input>
+            <label for="h">h</label>
+            <input type="radio" name="seleccion" value="h" id="h"></input>
+            <label for="i">i</label>
+            <input type="radio" name="seleccion" value="i" id="i"></input>
+        </div>
 
-		<div class="grupo" tabindex="4">
-			<div>j</div>
-			<div>k</div>
-			<div>l</div>
-		</div>
+        <div class="grupo" tabindex="4">
+            <label for="j">j</label>
+            <input type="radio" name="seleccion" value="j" id="j"></input>
+            <label for="k">k</label>
+            <input type="radio" name="seleccion" value="k" id="k"></input>
+            <label for="l">l</label>
+            <input type="radio" name="seleccion" value="l" id="l"></input>
+        </div>
 
-		<div class="grupo" tabindex="5">
-			<div>m</div>
-			<div>n</div>
-			<div>ñ</div>
-		</div>
+        <div class="grupo" tabindex="5">
+            <label for="m">m</label>
+            <input type="radio" name="seleccion" value="m" id="m"></input>
+            <label for="n">n</label>
+            <input type="radio" name="seleccion" value="n" id="n"></input>
+            <label for="ñ">ñ</label>
+            <input type="radio" name="seleccion" value="ñ" id="ñ"></input>
+        </div>
 
-		<div class="grupo" tabindex="6">
-			<div>o</div>
-			<div>p</div>
-			<div>q</div>
-		</div>
+        <div class="grupo" tabindex="6">
+            <label for="o">o</label>
+            <input type="radio" name="seleccion" value="o" id="o"></input>
+            <label for="p">p</label>
+            <input type="radio" name="seleccion" value="p" id="p"></input>
+            <label for="q">q</label>
+            <input type="radio" name="seleccion" value="q" id="q"></input>
+        </div>
 
-		<div class="grupo" tabindex="7">
-			<div>r</div>
-			<div>s</div>
-			<div>t</div>
-		</div>
+        <div class="grupo" tabindex="7">
+            <label for="r">r</label>
+            <input type="radio" name="seleccion" value="r" id="r"></input>
+            <label for="s">s</label>
+            <input type="radio" name="seleccion" value="s" id="s"></input>
+            <label for="t">t</label>
+            <input type="radio" name="seleccion" value="t" id="t"></input>
+        </div>
 
-		<div class="grupo" tabindex="8">
-			<div>u</div>
-			<div>v</div>
-			<div>w</div>
-		</div>
+        <div class="grupo" tabindex="8">
+            <label for="u">u</label>
+            <input type="radio" name="seleccion" value="u" id="u"></input>
+            <label for="v">v</label>
+            <input type="radio" name="seleccion" value="v" id="v"></input>
+            <label for="w">w</label>
+            <input type="radio" name="seleccion" value="w" id="w"></input>
+        </div>
 
-		<div class="grupo" tabindex="9">
-			<div>x</div>
-			<div>y</div>
-			<div>z</div>
-		</div>
-	</div>
+        <div class="grupo" tabindex="9">
+            <label for="x">x</label>
+            <input type="radio" name="seleccion" value="x" id="x"></input>
+            <label for="y">y</label>
+            <input type="radio" name="seleccion" value="y" id="y"></input>
+            <label for="z">z</label>
+            <input type="radio" name="seleccion" value="z" id="z"></input>
+        </div>
+    </div>
 
-	<div class="texto">
-		<div class="intro">El texto escrito es:</div>
-		<div class="escrito">(Aquí aparece el texto)</div>
-	</div>
+    <div class="texto">
+        <div class="intro">El texto escrito es:</div>
+        <div class="escrito">(Aquí aparece el texto)</div>
+    </div>
 </body>
 </html>

@@ -34,5 +34,3 @@ $(document).keydown(function(e) {
     }
     e.preventDefault();
 });
-
-
