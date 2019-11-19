@@ -18,7 +18,7 @@ $.getScript('https://luke-chang.github.io/js-spatial-navigation/spatial_navigati
 
 function dibujarCaracter(caracter) {
     if (true) { // No es el de borrar (o números)
-        $('.escrito span').html('') // Borra el span
+        $('.escrito span').remove() // Borra el span
         $('.escrito').append(caracter)
     }
 }
