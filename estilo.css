@@ -25,9 +25,15 @@ body {
 	border: 2px #707070 solid;
 }
 
-.grupo.seleccionado {
+.grupo:focus {
 	background: #606060;
 	color: #FFF;
+}
+
+.grupo.elegido {
+	background: red;
+	color: #FFF;
+	border: 2px red solid;
 }
 
 .texto {
