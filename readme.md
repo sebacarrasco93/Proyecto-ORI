@@ -15,3 +15,4 @@ Principalmente a personas que hayan tenido un Accidente Cerebrovascular (ACV) u 
 ## Herramientas utilizadas para el desarrollo
 > jQuery [by The jQuery Foundation](https://jquery.com)
 > Spatial Navigation [by Luke Chang](https://github.com/luke-chang/js-spatial-navigation)
+> [Keysticks](https://keysticks.net/download.aspx)
