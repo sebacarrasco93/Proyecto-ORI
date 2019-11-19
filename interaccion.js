@@ -3,6 +3,9 @@
 // Calendario hecho con jQuery: http://jsfiddle.net/eqrNT/
 
 function seleccionarGrupo() {
+    grupos = $('.grupo')
+    grupos.removeClass('elegido')
+
     grupoElegido = $('.grupo:focus')
     grupoElegido.addClass('elegido')
 }
