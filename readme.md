@@ -36,9 +36,15 @@ Principalmente a personas que:
 - [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
 
 ## Agradecimientos
-- [Caro Garrido](https://twitter.com/caropig), por su ayuda y apoyo en el desarrollo del proyecto (y amanecerse conmigo)
+- [Caro Garrido 🦁](https://twitter.com/caropig), por su ayuda y apoyo en el desarrollo del proyecto (y amanecerse conmigo)
 - [Tim Brogden](https://twitter.com/mrkeysticks?lang=es) por su software que usamos para la comunicación entre la interfaz de Joystick y el navegador
 - [How to Use Laravel Mix in Non-Laravel Projects](https://www.sitepoint.com/use-laravel-mix-non-laravel-projects/) ([Lasse Rafn](https://www.sitepoint.com/author/lrafn/))
 - Por simplificar el trabajo de desarrollo con Mix, en SASS y JS ([Jeffrey Way](https://twitter.com/jeffrey_way)) de [Laracasts](https://www.laracasts.com)
 - A las personas de buen corazón que quieran probar el sistema con alguien que lo necesite ❤️
 - A quien lo necesite, para mejorar su forma de comunicarse ❤️❤️
+
+## Agradecimientos especiales
+- [Nacho, su polola y su familia, por ser mi inspiración en estas cosas](https://instagram.com/_.kuyen.antu._)
+- [Mi mamá, que me dió la vida, y sorpresivamente también sufrió un ACV](https://es-la.facebook.com/1264400925)
+- Familia de Oriana
+- Y por supuesto, a Oriana
