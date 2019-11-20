@@ -23,6 +23,22 @@ function dibujarCaracter(caracter) {
     }
 }
 
+function borrarCaracter() {
+    let texto = $('.escrito').text()
+    if (texto.length) {
+        let eliminado = texto.slice(0, -1)
+        $('.escrito').text(eliminado)
+    }
+}
+
+function dibujarEspacio() {
+    let espacio = ' '
+    let texto = $('.escrito').text()
+    if (texto.length) {
+        $('.escrito').append(espacio)
+    }
+}
+
 function seleccionarGrupo() {
     grupos = $('.grupo')
     grupos.removeClass('elegido')
@@ -30,6 +46,15 @@ function seleccionarGrupo() {
     grupoElegido = $('.grupo:focus')
     grupoElegido.addClass('elegido')
 }
+
+$(document).keydown(function(e) {
+    if (e.which === 8) {
+        borrarCaracter()
+    }
+    if (e.which === 32) {
+        dibujarEspacio()
+    }
+})
 
 // $(document).keydown(function(e) {
 //     switch(e.which) {

@@ -44,7 +44,7 @@ Principalmente a personas que:
 - A quien lo necesite, para mejorar su forma de comunicarse ❤️❤️
 
 ## Agradecimientos especiales
-- [Nacho, su polola y su familia, por ser mi inspiración en estas cosas](https://instagram.com/_.kuyen.antu._)
+- [Nacho](https://instagram.com/_.kuyen.antu._), su polola y su familia, por ser mi inspiración en estas cosas
 - [Mi mamá, que me dió la vida, y sorpresivamente también sufrió un ACV](https://es-la.facebook.com/1264400925)
 - Familia de Oriana
 - Y por supuesto, a Oriana
