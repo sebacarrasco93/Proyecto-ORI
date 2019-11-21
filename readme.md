@@ -33,13 +33,13 @@ Principalmente a personas que:
 - jQuery [by The jQuery Foundation](https://jquery.com)
 - Spatial Navigation [by Luke Chang](https://github.com/luke-chang/js-spatial-navigation)
 - [Keysticks](https://keysticks.net/download.aspx)
-- [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
+- [Laravel Mix](https://laravel-mix.com/)
 
 ## Agradecimientos
 - [Caro Garrido 🦁](https://twitter.com/caropig), por su ayuda y apoyo en el desarrollo del proyecto (y amanecerse conmigo)
 - [Tim Brogden](https://twitter.com/mrkeysticks?lang=es) por su software que usamos para la comunicación entre la interfaz de Joystick y el navegador
 - [How to Use Laravel Mix in Non-Laravel Projects](https://www.sitepoint.com/use-laravel-mix-non-laravel-projects/) ([Lasse Rafn](https://www.sitepoint.com/author/lrafn/))
-- Por simplificar el trabajo de desarrollo con Mix, en SASS y JS ([Jeffrey Way](https://twitter.com/jeffrey_way)) de [Laracasts](https://www.laracasts.com)
+- Por simplificar el trabajo de desarrollo con [Mix](https://github.com/JeffreyWay/laravel-mix), en SASS y JS ([Jeffrey Way](https://twitter.com/jeffrey_way)) de [Laracasts](https://www.laracasts.com)
 - A las personas de buen corazón que quieran probar el sistema con alguien que lo necesite ❤️
 - A quien lo necesite, para mejorar su forma de comunicarse ❤️❤️
 
