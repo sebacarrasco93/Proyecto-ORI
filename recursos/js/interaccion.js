@@ -19,8 +19,16 @@ window.addEventListener('load', function() {
 });
 
 function entrarAlGrupo(e) {
-    // console.log(e.target)
-    console.log('Elegí una opción de grupo')
+    let idGrupo = e.target.id
+    let parteDom = $(`div[id=${idGrupo}]`).contents('input[type="radio"]')
+
+    parteDom.each(function (a, b) {
+        let idEncontrado = b.id
+        let encontrado = $(`label[for="${idEncontrado}"]`)
+        encontrado.addClass('seleccionable')
+    })
+
+    // console.log('Elegí una opción de grupo')
     SN.uninit()
     SN.init()
     SN.add({
@@ -28,7 +36,7 @@ function entrarAlGrupo(e) {
     })
     SN.makeFocusable()
     SN.focus()
-    dibujarCaracter(e.target.innerText[0])
+    // dibujarCaracter(e.target.innerText[0])
 }
 
 function dibujarCaracter(caracter) {
