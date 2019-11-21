@@ -2,11 +2,13 @@
 // Pregunta de seleccionar divs: https://stackoverflow.com/questions/15603617/choose-and-select-div-elements-with-keyboard-arrows-and-enter-keys
 // Calendario hecho con jQuery: http://jsfiddle.net/eqrNT/
 
+SN = SpatialNavigation // Definir como variable "global"
+
 window.addEventListener('load', function() {
     $('.grupo')
     .SpatialNavigation()
     .on('sn:enter-down', function(e) {
-        dibujarCaracter(e.target.innerText[0])
+        entrarAlGrupo(e)
     })
     .focus(function() {
         seleccionarGrupo(this)
@@ -15,6 +17,19 @@ window.addEventListener('load', function() {
     .first()
     .focus()
 });
+
+function entrarAlGrupo(e) {
+    // console.log(e.target)
+    console.log('Elegí una opción de grupo')
+    SN.uninit()
+    SN.init()
+    SN.add({
+        selector: '.seleccionable'
+    })
+    SN.makeFocusable()
+    SN.focus()
+    dibujarCaracter(e.target.innerText[0])
+}
 
 function dibujarCaracter(caracter) {
     if (true) { // No es el de borrar (o números)
