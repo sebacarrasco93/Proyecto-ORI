@@ -5,5 +5,6 @@ try {
 	console.error(e);
 }
 
+require('./spatial_navigation');
 require('./interaccion');
 require('./mostrar');
