@@ -3,20 +3,26 @@
 // Calendario hecho con jQuery: http://jsfiddle.net/eqrNT/
 
 window.addEventListener('load', function() {
-    SN.init();
+    SN.init()
     
     SN.add({
         id: 'grupos',
         selector: '.grupo'
-    });
+    })
+
+    SN.add({
+        id: 'letritas',
+        selector: '.seleccionable',
+        restrict: 'self-only',
+    })
 
     $('.grupo')
         .on('sn:enter-down', function(e) {
             decidirOpcion(e)
     })
 
-    SN.makeFocusable();
-    SN.focus();
+    SN.makeFocusable()
+    SN.focus()
 })
 
 function decidirOpcion(e) {
@@ -26,31 +32,11 @@ function decidirOpcion(e) {
     } else {
         let caracterElegido = e.target.control.value
         dibujarCaracter(caracterElegido)
+        $('label').removeClass('seleccionable')
         SN.focus('grupos')
         return false
     }
 }
-
-// window.addEventListener('load', function() {
-//     $('.grupo')
-//     .SpatialNavigation()
-//     .on('sn:enter-down', function(e) {
-//         let idGrupo = e.target.id
-//         if (idGrupo) {
-//             entrarAlGrupo(idGrupo)
-//         } else {
-//             let caracterElegido = e.target.control.value
-//             dibujarCaracter(caracterElegido)
-//             return false;
-//         }
-//     })
-//     .focus(function() {
-//         seleccionarGrupo(this)
-//     })
-//     .blur(function() { $(this).css('outline', ''); })
-//     .first()
-//     .focus()
-// });
 
 function entrarAlGrupo(idGrupo) {
     let parteDom = $(`div[id=${idGrupo}]`).contents('input[type="radio"]')
@@ -59,19 +45,11 @@ function entrarAlGrupo(idGrupo) {
         let idEncontrado = b.id
         let encontrado = $(`label[for="${idEncontrado}"]`)
         encontrado.addClass('seleccionable')
+
+        SN.makeFocusable()
+        SN.focus('letritas')
     })
 
-    // console.log('Elegí una opción de grupo')
-    SN.uninit()
-    SN.init()
-    SN.add({
-        id: 'letritas',
-        selector: '.seleccionable',
-        restrict: 'self-only',
-    })
-    SN.makeFocusable()
-    SN.focus()
-    // dibujarCaracter(e.target.innerText[0])
 }
 
 function dibujarCaracter(caracter) {
