@@ -9,6 +9,9 @@ window.addEventListener('load', function() {
         let idGrupo = e.target.id
         if (idGrupo) {
             entrarAlGrupo(idGrupo)
+        } else {
+            let caracterElegido = e.target.control.value
+            dibujarCaracter(caracterElegido)
         }
     })
     .focus(function() {
