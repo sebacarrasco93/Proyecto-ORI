@@ -6,7 +6,10 @@ window.addEventListener('load', function() {
     $('.grupo')
     .SpatialNavigation()
     .on('sn:enter-down', function(e) {
-        entrarAlGrupo(e)
+        let idGrupo = e.target.id
+        if (idGrupo) {
+            entrarAlGrupo(idGrupo)
+        }
     })
     .focus(function() {
         seleccionarGrupo(this)
@@ -16,8 +19,7 @@ window.addEventListener('load', function() {
     .focus()
 });
 
-function entrarAlGrupo(e) {
-    let idGrupo = e.target.id
+function entrarAlGrupo(idGrupo) {
     let parteDom = $(`div[id=${idGrupo}]`).contents('input[type="radio"]')
 
     parteDom.each(function (a, b) {
@@ -30,7 +32,8 @@ function entrarAlGrupo(e) {
     SN.uninit()
     SN.init()
     SN.add({
-        selector: '.seleccionable'
+        selector: '.seleccionable',
+        restrict: 'self-only',
     })
     SN.makeFocusable()
     SN.focus()

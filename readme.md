@@ -48,3 +48,6 @@ Principalmente a personas que:
 - [Mi mamá](https://es-la.facebook.com/1264400925), que me dió la vida, y sorpresivamente también sufrió un ACV
 - Familia de Oriana
 - Y por supuesto, a Oriana
+
+## Contacto
+Si quieres ubicarme, puedes encontrarme en [Twitter](https://twitter.com/SoyElSeba1313)
