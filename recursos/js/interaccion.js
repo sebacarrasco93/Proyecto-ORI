@@ -3,24 +3,54 @@
 // Calendario hecho con jQuery: http://jsfiddle.net/eqrNT/
 
 window.addEventListener('load', function() {
+    SN.init();
+    
+    SN.add({
+        id: 'grupos',
+        selector: '.grupo'
+    });
+
     $('.grupo')
-    .SpatialNavigation()
-    .on('sn:enter-down', function(e) {
-        let idGrupo = e.target.id
-        if (idGrupo) {
-            entrarAlGrupo(idGrupo)
-        } else {
-            let caracterElegido = e.target.control.value
-            dibujarCaracter(caracterElegido)
-        }
+        .on('sn:enter-down', function(e) {
+            decidirOpcion(e)
     })
-    .focus(function() {
-        seleccionarGrupo(this)
-    })
-    .blur(function() { $(this).css('outline', ''); })
-    .first()
-    .focus()
-});
+
+    SN.makeFocusable();
+    SN.focus();
+})
+
+function decidirOpcion(e) {
+    let idGrupo = e.target.id
+    if (idGrupo) {
+        entrarAlGrupo(idGrupo)
+    } else {
+        let caracterElegido = e.target.control.value
+        dibujarCaracter(caracterElegido)
+        SN.focus('grupos')
+        return false
+    }
+}
+
+// window.addEventListener('load', function() {
+//     $('.grupo')
+//     .SpatialNavigation()
+//     .on('sn:enter-down', function(e) {
+//         let idGrupo = e.target.id
+//         if (idGrupo) {
+//             entrarAlGrupo(idGrupo)
+//         } else {
+//             let caracterElegido = e.target.control.value
+//             dibujarCaracter(caracterElegido)
+//             return false;
+//         }
+//     })
+//     .focus(function() {
+//         seleccionarGrupo(this)
+//     })
+//     .blur(function() { $(this).css('outline', ''); })
+//     .first()
+//     .focus()
+// });
 
 function entrarAlGrupo(idGrupo) {
     let parteDom = $(`div[id=${idGrupo}]`).contents('input[type="radio"]')
@@ -35,6 +65,7 @@ function entrarAlGrupo(idGrupo) {
     SN.uninit()
     SN.init()
     SN.add({
+        id: 'letritas',
         selector: '.seleccionable',
         restrict: 'self-only',
     })
@@ -66,13 +97,13 @@ function dibujarEspacio() {
     }
 }
 
-function seleccionarGrupo() {
-    grupos = $('.grupo')
-    grupos.removeClass('elegido')
+// function seleccionarGrupo() {
+//     grupos = $('.grupo')
+//     grupos.removeClass('elegido')
 
-    grupoElegido = $('.grupo:focus')
-    grupoElegido.addClass('elegido')
-}
+//     grupoElegido = $('.grupo:focus')
+//     grupoElegido.addClass('elegido')
+// }
 
 $(document).keydown(function(e) {
     if (e.which === 8) {
