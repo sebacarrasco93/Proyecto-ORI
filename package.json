@@ -32,7 +32,8 @@
   },
   "homepage": "https://github.com/sebacarrasco93/Proyecto-ORI#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "spatial-navigation-js": "^1.0.0"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",

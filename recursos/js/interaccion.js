@@ -2,8 +2,6 @@
 // Pregunta de seleccionar divs: https://stackoverflow.com/questions/15603617/choose-and-select-div-elements-with-keyboard-arrows-and-enter-keys
 // Calendario hecho con jQuery: http://jsfiddle.net/eqrNT/
 
-SN = SpatialNavigation // Definir como variable "global"
-
 window.addEventListener('load', function() {
     $('.grupo')
     .SpatialNavigation()

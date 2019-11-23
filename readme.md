@@ -45,6 +45,6 @@ Principalmente a personas que:
 
 ## Agradecimientos especiales
 - [Nacho](https://instagram.com/_.kuyen.antu._), su polola y su familia, por ser mi inspiración en estas cosas
-- [Mi mamá, que me dió la vida, y sorpresivamente también sufrió un ACV](https://es-la.facebook.com/1264400925)
+- [Mi mamá](https://es-la.facebook.com/1264400925), que me dió la vida, y sorpresivamente también sufrió un ACV
 - Familia de Oriana
 - Y por supuesto, a Oriana
