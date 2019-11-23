@@ -53,6 +53,10 @@ function entrarAlGrupo(idGrupo) {
 }
 
 function dibujarCaracter(caracter) {
+    if (caracter == 'borrarTodo') {
+        return borrarTodo()
+    }
+
     if (caracter == 'borrarCaracter') {
         return borrarCaracter()
     }
@@ -63,6 +67,13 @@ function dibujarCaracter(caracter) {
 
     $('.escrito span').remove() // Borra el span
     $('.escrito').append(caracter)
+}
+
+function borrarTodo() {
+    let texto = $('.escrito').text()
+    if (texto.length) {
+        $('.escrito').text('')
+    }
 }
 
 function borrarCaracter() {
