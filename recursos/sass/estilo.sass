@@ -60,5 +60,19 @@ input[type='radio']
 			border: 2px #606060 solid
 			outline: #606060
 
+		label
+			&:focus
+				background: #077ADD
+				color: #FFF
+				outline: none
+
 .texto 
 	margin: 10px
+
+	.escrito
+		text-transform: lowercase
+		font-size: 35px
+
+		&::first-letter
+			text-transform: uppercase
+			font-size: 40px

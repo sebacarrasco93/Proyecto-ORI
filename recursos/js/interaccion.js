@@ -53,10 +53,16 @@ function entrarAlGrupo(idGrupo) {
 }
 
 function dibujarCaracter(caracter) {
-    if (true) { // No es el de borrar (o números)
-        $('.escrito span').remove() // Borra el span
-        $('.escrito').append(caracter)
+    if (caracter == 'borrarCaracter') {
+        return borrarCaracter()
     }
+    
+    if (caracter == 'espacio') {
+        return dibujarEspacio()
+    }
+
+    $('.escrito span').remove() // Borra el span
+    $('.escrito').append(caracter)
 }
 
 function borrarCaracter() {
