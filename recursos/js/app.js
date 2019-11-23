@@ -1,3 +1,5 @@
+let app_debug = true
+
 try {
     window.$ = window.jQuery = require('jquery');
 } catch (e) {
@@ -7,4 +9,7 @@ try {
 
 require('./spatial_navigation');
 require('./interaccion');
-require('./mostrar');
+
+if (app_debug) {
+    require('./mostrar');
+}
