@@ -37,6 +37,8 @@ function decidirOpcion(e) {
 function entrarAlGrupo(idGrupo) {
     let parteDom = $(`div[id=${idGrupo}]`).contents('input[type="radio"]')
 
+    console.log(`Se eligió el grupo -> ${idGrupo}`)
+
     parteDom.each(function (a, b) {
         let idEncontrado = b.id
         let encontrado = $(`label[for="${idEncontrado}"]`)
@@ -50,17 +52,21 @@ function entrarAlGrupo(idGrupo) {
 
 function dibujarCaracter(caracter) {
     if (caracter == 'borrarTodo') {
+        console.log(`Se borró todo`)
         return borrarTodo()
     }
 
     if (caracter == 'borrarCaracter') {
+        console.log(`Se borró un caracter`)
         return borrarCaracter()
     }
     
     if (caracter == 'espacio') {
+        console.log(`Se dibujó un espacio`)
         return dibujarEspacio()
     }
 
+    console.log(`Escrito -> ${caracter}`)
     $('.escrito span[id="aparece"]').remove() // Borra el span
     $('.escrito').append(caracter)
 }

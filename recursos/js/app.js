@@ -10,6 +10,6 @@ try {
 
 require('./interaccion');
 
-if (app_debug) {
+if (! app_debug) {
     require('./mostrar');
 }
