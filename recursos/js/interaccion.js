@@ -1,19 +1,15 @@
-// Interacción con teclas en jQuery: https://stackoverflow.com/questions/1402698/binding-arrow-keys-in-js-jquery
-// Pregunta de seleccionar divs: https://stackoverflow.com/questions/15603617/choose-and-select-div-elements-with-keyboard-arrows-and-enter-keys
-// Calendario hecho con jQuery: http://jsfiddle.net/eqrNT/
-
 window.addEventListener('load', function() {
     SN.init()
     
     SN.add({
-        id: 'grupos',
+        id: 'grupitos',
         selector: '.grupo'
     })
 
     SN.add({
         id: 'letritas',
         selector: '.seleccionable',
-        restrict: 'self-only',
+        restrict: 'self-only' // No salirse de la selección hacia el grupo!
     })
 
     $('.grupo')
@@ -33,7 +29,7 @@ function decidirOpcion(e) {
         let caracterElegido = e.target.control.value
         dibujarCaracter(caracterElegido)
         $('label').removeClass('seleccionable')
-        SN.focus('grupos')
+        SN.focus('grupitos')
         return false
     }
 }
@@ -65,7 +61,7 @@ function dibujarCaracter(caracter) {
         return dibujarEspacio()
     }
 
-    $('.escrito span').remove() // Borra el span
+    $('.escrito span[id="aparece"]').remove() // Borra el span
     $('.escrito').append(caracter)
 }
 
@@ -92,14 +88,6 @@ function dibujarEspacio() {
     }
 }
 
-// function seleccionarGrupo() {
-//     grupos = $('.grupo')
-//     grupos.removeClass('elegido')
-
-//     grupoElegido = $('.grupo:focus')
-//     grupoElegido.addClass('elegido')
-// }
-
 $(document).keydown(function(e) {
     if (e.which === 8) {
         borrarCaracter()
@@ -108,31 +96,3 @@ $(document).keydown(function(e) {
         dibujarEspacio()
     }
 })
-
-// $(document).keydown(function(e) {
-//     switch(e.which) {
-//         case 13:
-//             console.log('enter')
-//             seleccionarGrupo()
-//         break;
-
-//         case 37:
-//             console.log('izquierda')
-//         break;
-
-//         case 38:
-//             console.log('arriba')
-//         break;
-
-//         case 39:
-//             console.log('derecha')
-//         break;
-
-//         case 40:
-//             console.log('abajo')
-//         break;
-
-//         default: return;
-//     }
-//     e.preventDefault();
-// });
